@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exe 9</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		p{
+			margin-top: 20px;
+			margin-left: 10px;
+			padding: 5px;
+			border: 2px solid #666;
+		}
+
+		.size {
+    		font-size: 150%;
+  			color: red;
+  		}
+	</style>
+</head>
+<body>
+
+	<button class="btn btn-outline-danger">Click Hide & Show</button>
+	<p>Hello Suprise Test, CLICK ME!! </p>
+
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").toggle();
+			});
+
+			$("p").click(function() {
+ 		 		$(this).toggleClass("size");
+			});
+		});
+	</script>
+</body>
+</html>

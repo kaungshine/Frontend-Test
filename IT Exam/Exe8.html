@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exe 8</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<textarea id="mytext" rows="5" cols="50"></textarea>
+	<p><button type="button" class="btn btn-info">Get Result</button></p>
+
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				let mytext = $.trim($("#mytext").val());
+				if(mytext != ""){
+                alert(mytext);
+            }
+        });
+
+		});
+	</script>
+</body>
+</html>
